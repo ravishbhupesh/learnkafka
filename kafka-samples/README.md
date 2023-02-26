@@ -23,9 +23,11 @@ To run local, just extract the above archive file and run the following commands
 
 ** Versions **
 
-Spring Boot 2.7.9
-Java 8
-Kafka Clients managed as part of Spring Boot
+- Spring Boot 2.7.9
+- Java 8
+- Kafka Clients managed as part of Spring Boot
+
+** Sub Modules **
 
 - kafka-samples-producer
 - kafka-samples-consumer
