@@ -14,12 +14,13 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "localhost:9092,localhost:9192,localhost:9292");
+		//props.put("bootstrap.servers", "localhost:9092,localhost:9192,localhost:9292");
+		props.put("bootstrap.servers", "localhost:9092");
 		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 		try (KafkaProducer<String, String> producer = new KafkaProducer<>(props)) {
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 100; i++) {
 				producer.send(new ProducerRecord<String, String>("my-topic", Integer.toString(i),
 						"MyMessage: " + Integer.toString(i)));
 			}
