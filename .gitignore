@@ -4,6 +4,7 @@
 #classpath
 *.classpath
 **/*.classpath
+**\*.classpath
 
 # Log file
 *.log
