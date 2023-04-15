@@ -49,5 +49,6 @@
 	<modules>
 		<module>kafka-samples-producer</module>
 		<module>kafka-samples-consumer</module>
+		<module>kafka-spring-example</module>
 	</modules>
 </project>
